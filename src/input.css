@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  min-height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nova Square", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nova Square", sans-serif;
+}
+
+/*Color scheme*/
+:root {
+  --brand: rgb(113, 72, 252);
+  --brand-darkest: rgb(12, 18, 28);
+  --brand-dark: rgb(30, 41, 59);
+  --brand-mid: rgb(184, 191, 198);
+  --brand-light: rgb(214, 222, 231);
+  --brand-white: rgb(255, 255, 255);
+}
+
+main {
+  background-color: var(--brand-light);
+  padding: 15px;
+  box-shadow: 0 0 10px var(--brand-mid);
+  border-radius: 20px;
+}
+.form__wrapper {
+  background-color: var(--brand);
+  color: var(--brand-white);
+  border-radius: 20px;
+  box-shadow: 0 0 10px var(--brand-white);
+  padding: 20px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+fieldset {
+  margin-bottom: 20px;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+button {
+  padding: 15px 35px;
+  border: none;
+  border-radius: 7px;
+  font-family: inherit;
+  font-weight: 700;
+  background-color: var(--brand-dark);
+  color: var(--brand-white);
+  letter-spacing: 3px;
+}
+section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: var(--brand-white);
+  padding: 20px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card > h2 {
+  margin: 0;
+}

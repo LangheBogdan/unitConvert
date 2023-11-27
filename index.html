@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/input.css" />
+    <title>Unit convertor</title>
+  </head>
+  <body>
+    <main>
+      <div class="form__wrapper">
+        <h1>Metric/Imperial Unit Conversion</h1>
+        <form>
+          <fieldset>
+            <legend>Input</legend>
+            <label for="usrInput">Enter a value to convert</label>
+            <input type="number" name="number" id="usrInput" />
+          </fieldset>
+          <button type="button" id="convert">CONVERT</button>
+        </form>
+      </div>
+      <section>
+        <div class="card">
+          <h2>Length (Meter/Feet)</h2>
+          <p id="meter-to-feet"></p>
+        </div>
+        <div class="card">
+          <h2>Volume (Liters/Gallons)</h2>
+          <p id="liters-to-gallons"></p>
+        </div>
+        <div class="card">
+          <h2>Mass (Kilograms/Pounds)</h2>
+          <p id="kilograms-to-pounds"></p>
+        </div>
+      </section>
+    </main>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
