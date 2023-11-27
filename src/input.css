@@ -66,6 +66,27 @@ fieldset {
   justify-content: center;
   align-items: center;
   gap: 5px;
+  flex-direction: column;
+}
+input[type="number"] {
+  width: 100px;
+  height: 100px;
+  font-family: inherit;
+  font-size: 50px;
+  font-weight: 700;
+  border-radius: 7px;
+  border: none;
+  text-align: center;
+  background-color: var(--brand-mid);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input:focus-visible {
+  outline: 2px dashed var(--brand-dark);
+  box-shadow: 0 0 10px var(--brand-white);
 }
 button {
   padding: 15px 35px;
